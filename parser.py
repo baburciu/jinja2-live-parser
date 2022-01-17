@@ -34,7 +34,8 @@ def home():
 
 @app.route('/convert', methods=['GET', 'POST'])
 def convert():
-    jinja2_env = Environment()
+    jinja2_env = Environment(extensions=['jinja2_ansible_filters.AnsibleCoreFiltersExtension'])
+    jinja2_env.add_extension('jinja2.ext.do')
 
     # Load custom filters
     custom_filters = get_custom_filters()
