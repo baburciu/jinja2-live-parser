@@ -86,6 +86,7 @@ def convert():
         rendered_jinja2_tpl = rendered_jinja2_tpl.replace(' ', u'•')
 
     return escape(rendered_jinja2_tpl).replace('\n', '<br />')
+    print "{}".format(rendered_jinja2_tpl)
 
 
 if __name__ == "__main__":
