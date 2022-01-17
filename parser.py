@@ -85,8 +85,8 @@ def convert():
         # Replace whitespaces with a visible character (will be grayed with javascript)
         rendered_jinja2_tpl = rendered_jinja2_tpl.replace(' ', u'•')
 
-    return escape(rendered_jinja2_tpl).replace('\n', '<br />')
-    print("{}".format(rendered_jinja2_tpl))
+    print("{}".format(rendered_jinja2_tpl), flush=True)   # forces Py print output in Flask logs       
+    return escape(rendered_jinja2_tpl).replace('\n', '<br />')    
 
 
 if __name__ == "__main__":
