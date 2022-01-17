@@ -7,7 +7,7 @@ All you need is Python and preferably [pip](https://pypi.python.org/pypi/pip). C
 
 ### Clone + pip
 
-    $ git clone git@github.com:baburciu/jinja2-live-parser.git
+    $ git clone https://github.com/baburciu/jinja2-live-parser.git
     $ pip install -r requirements.txt
     $ python parser.py
 
