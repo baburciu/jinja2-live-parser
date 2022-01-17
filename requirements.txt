@@ -1,7 +1,9 @@
+wheel==0.37.1
 Flask==0.10.1
-Jinja2==2.7.1
+Jinja2==3.0.3
 PyYAML==3.11
-MarkupSafe==0.18
+MarkupSafe==2.0
 Werkzeug==0.9.6
 ipython==2.2.0
 itsdangerous==0.24
+jinja2-ansible-filters==1.3.0
