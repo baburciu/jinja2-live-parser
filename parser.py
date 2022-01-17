@@ -79,7 +79,7 @@ def convert():
     try:
         rendered_jinja2_tpl = jinja2_tpl.render(values)
     except (exceptions.TemplateRuntimeError, ValueError, TypeError) as e:
-        return "Error in your values input filed: {0}".format(e)
+        return "Error in your values input field: {0}".format(e)
 
     if bool(int(request.form['showwhitespaces'])):
         # Replace whitespaces with a visible character (will be grayed with javascript)
